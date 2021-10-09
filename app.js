@@ -57,6 +57,7 @@ function getCookie(cname) {
   }
   return "";
 }
+
 function checkCookie() {
   let user = getCookie("result");
   if (user != "") {
@@ -64,7 +65,10 @@ function checkCookie() {
     if (confirm(document.cookie + " Сохранить куки?")) { 
       if (alert("Куки сохранены, перезагрузите страничку")) { 
         window.location.reload();
-      }   
+      } else {
+        document.cookie ="result= ; max-age=0;"
+        window.location.reload();
+      }
     }   
   } 
 }
