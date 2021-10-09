@@ -48,7 +48,7 @@ alert(document.cookie)
 
 }
 
-/*
+
 function setCookie(cname,cvalue,exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -71,9 +71,9 @@ function getCookie(cname) {
   }
   return "";
 }
-
+/*
 function checkCookie() {
-  let user = getCookie("username");
+  let user = getCookie("result");
   if (user != "") {
     alert("Welcome again " + user);
   } else {
@@ -84,3 +84,9 @@ function checkCookie() {
   }
 }
 */
+function checkCookie() {
+  let user = getCookie("result");
+  if (user != "") {
+    prompt(document.cookie + "Удалить куки?");
+  } 
+}
