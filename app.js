@@ -65,10 +65,10 @@ function checkCookie() {
     if (confirm(document.cookie + " Сохранить куки?")) { 
       if (alert("Куки сохранены, перезагрузите страничку")) { 
         window.location.reload();
-      } else {
+      } 
+    } else {
         document.cookie ="result= ; max-age=0;"
         window.location.reload();
-      }
     }   
   } 
 }
