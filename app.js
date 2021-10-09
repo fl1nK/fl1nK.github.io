@@ -87,6 +87,13 @@ function checkCookie() {
 function checkCookie() {
   let user = getCookie("result");
   if (user != "") {
-    prompt(document.cookie + "Удалить куки?");
+    confirm(document.cookie + " Сохранить куки?");
+    if (ok) { 
+    alert("Здравствуйте, " + name);
+    if (ok) { 
+   window.location.reload();
+  }   
+  }   
+
   } 
 }
