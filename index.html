@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script>
-document.cookie = "username=John Doe; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/";
-alert(document.cookie)
-</script>  
+
 </head>
 
 <body>
 
+<form name="myForm">
+   <input type="text" name="num1">
+   <input type="text" name="num2">
+   <input type="text" name="num3">
+   <input type="text" name="num4">
+   <input type="text" name="num5">
+   <input type="text" name="num6">
+   <input type="text" name="num7">
+   <input type="text" name="num8">
+   <input type="text" name="num9">
+   <input type="text" name="num10">
+   <input type="button" onclick="validateForm()" value="Submit">
+</form>
+
+<script src="app.js"></script>  
 </body>
 
 </html>
