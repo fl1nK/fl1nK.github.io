@@ -1,17 +1,3 @@
-/*var divX = document.getElementById("divX")
-var divY = document.getElementById("divY")
-
-textDivX= divX.textContent
-divX.textContent = divY.textContent
-divY.textContent = textDivX
-
-function plosha(a,b){
-  document.getElementById("plosha").textContent = "Площа = " + (a+b)*2
-}
-
-plosha(2,5)
-*/
-
 
 function validateForm()
 {
@@ -71,29 +57,14 @@ function getCookie(cname) {
   }
   return "";
 }
-/*
 function checkCookie() {
   let user = getCookie("result");
   if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-     user = prompt("Please enter your name:","");
-     if (user != "" && user != null) {
-       setCookie("username", user, 30);
-     }
-  }
-}
-*/
-function checkCookie() {
-  let user = getCookie("result");
-  if (user != "") {
-    confirm(document.cookie + " Сохранить куки?");
-    if (ok) { 
-    alert("Здравствуйте, " + name);
-    if (ok) { 
-   window.location.reload();
-  }   
-  }   
-
+    
+    if (confirm(document.cookie + " Сохранить куки?")) { 
+      if (alert("Куки сохранены, перезагрузите страничку")) { 
+        window.location.reload();
+      }   
+    }   
   } 
 }
