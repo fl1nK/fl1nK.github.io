@@ -14,26 +14,59 @@
       <aside><p>ererefefe re ewf e ef e fwef e fe  ef dfsererefefe re ewf e ef e fwef e fe  ef dfs sf sererefefe re ewf e ef e fwef e fe  ef dfs sf sererefefe re ewf e ef e fwef e fe  ef dfs sf sererefefe re ewf e ef e fwef e fe  ef dfs sf s sf ssdfdfsf dfsdf sfsf sdfs fsdfsd fsdf sdf sdf sdf sd fsd fsf s fsdfsdfsfsdfsdfsdfsfsdfsffdsf sdfsd fds fsd fsd fsd fsd fsdf sd fsd fsd fsd fsd fsd fsd fsd fsd fsd fsd fdsf sd fsd fsfdfdsfsd fsdf sd fsdf</p></aside>
    </div>
    <nav class="box2">
-      <ul>
-         <li><a href="index.html">Перша сторінка</a></li>
-         <li><a href="lab1_2.html">Друга сторінка</a></li>
-         <li><a href="lab1_3.html">Третя сторінка</a></li>
-         <li><a href="lab1_4.html">Четверта сторінка</a></li>
-         <li><a href="lab1_5.html">П'ята сторінка</a></li>
-      </ul>
+      <div id="num7div1">
+         <ul>
+            <li><a href="index.html">Перша сторінка</a></li>
+            <li><a href="lab1_2.html">Друга сторінка</a></li>
+            <li><a href="lab1_3.html">Третя сторінка</a></li>
+            <li><a href="lab1_4.html">Четверта сторінка</a></li>
+            <li><a href="lab1_5.html">П'ята сторінка</a></li>
+         </ul>  
+      </div>
+      
+      <div id="num7div2">
+         <img src="tik.png" onmouseover="addRow('myTable')">
+         <input type="button" value="save my edits" onclick="saveEdits()"/>
+
+          <table id="myTable" cellspacing="0" border="1">
+           <tbody>
+             <tr>
+               <td>Стопчик</td>
+             </tr>
+           </tbody>
+         </table>   
+      </div>
+      
    </nav>
    <article class="box3"><p>Друга сторінка</p></article>
    <article class="box4">
-      <p>sdfdfsf dfsdf sfsf sdfs fsdfsd fsdf sdf sdf sdf sd fsd fsf s fsdfsdfsfsdfsdfsdfsfsdfsffdsf sdfsd fds fsd fsd fsd fsd fsdf sd fsd fsd fsd fsd fsd fsd fsd fsd fsd fsd fdsf sd fsd fsfdfdsfsd fsdf sd fsdf  </p>
+   <form name="myForm">
+      <input type="text" name="num1" style="width: 50px;">
+      <input type="text" name="num2" style="width: 50px;">
+      <input type="text" name="num3" style="width: 50px;">
+      <input type="text" name="num4" style="width: 50px;">
+      <input type="text" name="num5" style="width: 50px;">
+      <input type="text" name="num6" style="width: 50px;">
+      <input type="text" name="num7" style="width: 50px;">
+      <input type="text" name="num8" style="width: 50px;">
+      <input type="text" name="num9" style="width: 50px;">
+      <input type="text" name="num10" style="width: 50px;">
+      <input type="button" onclick="validateForm()" value="Submit">
+   </form>
       <h2 id="plosha"></h2>
    </article>
-   <article class="box5">
+   <article class="box5" id="textfocus">
+      <form id="form">
+         <input type="checkbox" id="textFont" onchange="fun1()">
+      </form>
       <p>sdfdfsf dfsdf sfsf sdfs fsdfsd fsdf sdf sdf sdf sd fsd fsf s fsdfsdfsfsdfsdfsdfsfsdfsffdsf sdfsd fds fsd fsd fsd fsd fsdf sd fsd fsd fsd fsd fsd fsd fsd fsd fsd fsd fdsf sd fsd fsfdfdsfsd fsdf sd fsdf</p>
    </article>
    <div class="box6">
+
       <aside>
          <p>ererefefe re ewf e ef e fwef e fe  ef dfsererefefe re ewf e ef e fwef e fe  ef dfs sf sererefefe re ewf e ef e fwef e fe  ef dfs sf sererefefe re ewf e ef e fwef e fe  ef dfs sf sererefefe re ewf e ef e fwef e fe  ef dfs sf s sf s</p>
       </aside>
+
       <article class="container2"><h3><span id="divY">Підманула - підвелаee  </span></h3></article>
    </div>
 </div>
