@@ -1,4 +1,18 @@
+var divX = document.getElementById("divX")
+var divY = document.getElementById("divY")
 
+textDivX= divX.textContent
+divX.textContent = divY.textContent
+divY.textContent = textDivX
+
+//-----------2
+function plosha(a,b){
+  document.getElementById("plosha").textContent = "Площа = " + (a+b)*2
+}
+
+plosha(2,5)
+
+//-----------3
 function validateForm()
 {
 
@@ -65,10 +79,72 @@ function checkCookie() {
     if (confirm(document.cookie + " Сохранить куки?")) { 
       if (alert("Куки сохранены, перезагрузите страничку")) { 
         window.location.reload();
-      } 
-    } else {
+      } else {
         document.cookie ="result= ; max-age=0;"
         window.location.reload();
+      }
     }   
   } 
+}
+
+//--------------------4---------
+var chbox = document.getElementById('textFont');
+var div = document.getElementById("textfocus")
+
+const textFont = localStorage.getItem("textFont")
+div.style.fontWeight = textFont
+
+const box = localStorage.getItem("box")
+chbox.checked = box
+
+function fun1() {
+
+if (chbox.checked) {
+    div.style.fontWeight = '700'
+    localStorage.setItem("textFont", "700")
+    localStorage.setItem("box", "true")
+  }
+  else {
+    div.style.fontWeight = 'normal'
+    localStorage.clear()
+  }
+}
+
+//--------------------5---------
+
+function addRow(id){
+    var tbody = document.getElementById(id).getElementsByTagName("TBODY")[0];
+    var row = document.createElement("TR")
+    var td1 = document.createElement("TD")
+    td1.appendChild(document.createTextNode("Рядок"))
+    row.appendChild(td1);
+    tbody.appendChild(row);
+  }
+
+function saveEdits() {
+
+  var editElem = document.getElementById("myTable");
+  var userVersion = editElem.innerHTML;
+  localStorage.userEdits = userVersion;
+
+  var num7div1 = document.getElementById("num7div1");
+  var num7div2 = document.getElementById("num7div2")
+  swapElements(document.getElementById("num7div1"), document.getElementById("num7div2"));
+}
+
+function swapElements(obj1, obj2) {
+    
+    var parent2 = obj2.parentNode;
+    var next2 = obj2.nextSibling;
+    
+    if (next2 === obj1) {
+        parent2.insertBefore(obj1, obj2);
+    } else {
+        obj1.parentNode.insertBefore(obj2, obj1);
+        if (next2) {
+            parent2.insertBefore(obj1, next2);
+        } else {
+            parent2.appendChild(obj1);
+        }
+    }
 }
