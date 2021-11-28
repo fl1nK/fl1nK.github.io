@@ -1,44 +1,28 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title></title>
-</head>
-
 <body>
-  <p>Suggestions: <span id="txtHint"></span></p>
 
-  <!--<script src="xhr.js"></script>-->
+<h2>The XMLHttpRequest Object</h2>
+<h3>Start typing a name in the input field below:</h3>
 
-  <script>
-    // XMLHttpRequest - встроенный объект, реализует ajax
+<p>Suggestions: <span id="txtHint"></span></p> 
+<p>First name: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>
 
-    // создание объекта
-    var xhr = new XMLHttpRequest();
-
-    // конфигурация запроса
-    xhr.open("GET", 'gethint.php?action=a', true);
-
-    // Отправка запроса на сервер
-    xhr.send();
-
-    // событие состояния и состояние (код ответа) сервера
-
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState != 4) return;
-      if (xhr.status != 200) {
-        console.log(xhr.status + ': ' + xhr.statusText); // пример вывода: 404: Not Found
-      } else {
-        document.getElementById("txtHint").innerHTML = xhr.responseText;
-        alert(xhr.responseText); // responseText -- текст ответа.
-        var res = JSON.parse(xhr.responseText);
-        console.log(res);
-      }
-    }
-
-  </script>
+<script>
+function showHint(str) {
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("txtHint").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "gethint.php?q="+str);
+  xhttp.send();   
+}
+</script>
 
 </body>
-
 </html>
