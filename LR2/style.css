@@ -62,7 +62,6 @@
 }
 
 #transform-screen{
-    position: relative;
     transform: translate(9px, 10px);
 }
 
