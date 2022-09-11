@@ -1,0 +1,53 @@
+.float-container{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#text1{
+    background-color: aqua;
+    height: 50px;
+}
+
+#text2{
+    background-color: cadetblue;
+    float: left;
+    width: 75%;
+}
+
+#img1{
+    background-color: chartreuse;
+    float: left;
+    width: 25%;
+}
+
+#img2{
+    background-color: pink;
+    height: 100px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#text1-flex{
+    background-color: aqua;
+    width: 100%;
+}
+
+#text2-flex{
+    background-color: cadetblue;
+    flex: 75%;
+}
+
+#img1-flex{
+    background-color: chartreuse;
+    flex: 25%;
+}
+
+#img2-flex{
+    background-color: pink;
+    width: 100%;
+}
