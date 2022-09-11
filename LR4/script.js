@@ -17,7 +17,7 @@ function bcEx2(){
 
 // Завдання 2 -------------------------------
 function add(){
-    document.getElementById("img").src = "images/Carpathian.jpg"
+    document.getElementById("img").src = "images/img2.jpg"
     document.getElementById("img").style.display = ""        
 }
 
