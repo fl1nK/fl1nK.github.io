@@ -1,21 +1,11 @@
-.phone{
+.clock{
     position: relative;
     margin: 20px;
     border-radius: 15px;
-    background-color: #b6ca7f;
-    height: 200px;
+    background-color: white;
+    height: 100px;
     width: 100px;
     border: 1px solid black;
-}
-
-.screen{
-    border-radius: 15px;
-    background-color: white;
-    height: 80px;
-    width: 80px;
-    border: 1px solid black;
-    text-align: center;
-    line-height: 40px;
 }
 
 .button{
@@ -27,68 +17,61 @@
 
 }
 
-#position-screen{
-    position: relative;
-    left: 9px;
-    top: 10px;
+.point {
+    position: absolute;
+    border-radius: 15px;
+    background-color: red;
+    border: 1px solid black;
+    height: 10px;
+    width: 10px;
+}
+.arrow {
+    background-color: black;
+    position: absolute;
+}
+#position-point1{
+    left: 45px; top: 4px;
+}
+#position-point2{
+    left: 45px; top: 85px;
+}
+#position-point3{
+    left: 4px; top: 45px;
+}
+#position-point4{
+    left: 85px; top: 45px;
+}
+#position-arrowH{
+    height: 50px;
+    width: 4px;
+    left: 49px; top: 10px;
+}
+#position-arrowM{
+    height: 3px;
+    width: 40px;
+    left: 40px; top: 49px;
 }
 
-#position-button1{
-    left: 15px; top: 100px;
-}
-#position-button2{
-    left: 40px; top: 100px;
-}
-#position-button3{
-    left: 65px; top: 100px;
-}
-#position-button4{
-    left: 15px; top: 130px;
-}
-#position-button5{
-    left: 40px; top: 130px;
-}
-#position-button6{
-    left: 65px; top: 130px;
-}
-#position-button7{
-    left: 15px; top: 160px;
-}
-#position-button8{
-    left: 40px; top: 160px;
-}
-#position-button9{
-    left: 65px; top: 160px;
-}
 
-#transform-screen{
-    transform: translate(9px, 10px);
+#transform-point1{
+    transform: translate(45px, 4px);
 }
-
-#transform-button1{
-    transform: translate(15px, 20px);
+#transform-point2{
+    transform: translate(45px, 85px);
 }
-#transform-button2{
-    transform: translate(40px, 20px);
+#transform-point3{
+    transform: translate(4px, 45px);
 }
-#transform-button3{
-    transform: translate(65px, 20px);
+#transform-point4{
+    transform: translate(85px, 45px);
 }
-#transform-button4{
-    transform: translate(15px, 50px);
+#transform-arrowH{
+    height: 50px;
+    width: 4px;
+    transform: translate(49px, 10px);
 }
-#transform-button5{
-    transform: translate(40px, 50px);
-}
-#transform-button6{
-    transform: translate(65px, 50px);
-}
-#transform-button7{
-    transform: translate(15px, 80px);
-}
-#transform-button8{
-    transform: translate(40px, 80px);
-}
-#transform-button9{
-    transform: translate(65px, 80px);
+#transform-arrowM{
+    height: 3px;
+    width: 40px;
+    transform: translate(40px, 49px);
 }
