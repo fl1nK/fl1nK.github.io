@@ -1,0 +1,26 @@
+#persons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+#person {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    margin: 5px;
+    background-color: darkgrey;
+    color: aliceblue;
+    word-wrap: break-word;
+    }
+
+#person img {
+    width: 100%;
+ 
+}
+
+#person span{
+    margin-left: 5px;
+    padding: 5px;
+}
