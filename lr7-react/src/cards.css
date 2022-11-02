@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    width: 16vw;
+    height: 12vw;
+}
+
+.product {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px grey, -2px -2px 2px grey;
+    width: 16vw;
+    transition: transform 250ms ease-in-out;
+}
+
+.product:hover{
+    transform: scale(1.03);
+}
