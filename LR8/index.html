@@ -4,9 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
+    <!-- Подключаем CSS слайдера -->
+    <link rel="stylesheet" href="simple-adaptive-slider.min.css" />
+    <!-- Подключаем JS слайдера -->
+    <script defer src="simple-adaptive-slider.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // инициализация слайдера
+        var slider = new SimpleAdaptiveSlider("#slider-1", {
+          autoplay: true,
+          interval: 10000,
+        });
+
+        // инициализация слайдера
+        var slider = new SimpleAdaptiveSlider("#slider-2", {
+          autoplay: true,
+          interval: 10000,
+        });
+      });
+    </script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
     <div class="header1">
       <img src="png5.png" />
@@ -44,6 +64,62 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Разметка слайдера -->
+    <div class="slider" id="slider-1">
+      <div class="slider__wrapper">
+        <div class="slider__items">
+          <div class="slider__item">
+            <img
+              class="img-fluid"
+              src="images/111.jpg"
+              alt="..."
+              height="400"
+              loading="lazy"
+            />
+          </div>
+          <div class="slider__item">
+            <img
+              class="img-fluid"
+              src="images/112.jpg"
+              alt="..."
+              height="400"
+              loading="lazy"
+            />
+          </div>
+          <div class="slider__item">
+            <img
+              class="img-fluid"
+              src="images/113.jpg"
+              alt="..."
+              height="400"
+              loading="lazy"
+            />
+          </div>
+          <div class="slider__item">
+            <img
+              class="img-fluid"
+              src="images/114.jpg"
+              alt="..."
+              height="400"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <a
+        class="slider__control slider__control_prev"
+        href="#"
+        role="button"
+        data-slide="prev"
+      ></a>
+      <a
+        class="slider__control slider__control_next"
+        href="#"
+        role="button"
+        data-slide="next"
+      ></a>
+    </div>
 
     <div class="container">
       <div class="text">
@@ -164,8 +240,51 @@
       </div>
     </div>
 
-    <div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="container_4">
+      <div class="text4">
+        <h2>OUR PROJECTS</h2>
+        <h1>Explore Our <b>Recent Projects</b></h1>
+      </div>
+
+      <!-- Разметка слайдера -->
+      <div class="slider" id="slider-2">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <img
+                class="img-fluid"
+                src="png6.png"
+                alt="..."
+                height="400"
+                width="=800"
+                loading="lazy"
+              />
+            </div>
+            <div class="slider__item">
+              <img
+                class="img-fluid"
+                src="png6.png"
+                alt="..."
+                height="400"
+                width="=800"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <a
+          class="slider__control slider__control_prev"
+          href="#"
+          role="button"
+          data-slide="prev"
+        ></a>
+        <a
+          class="slider__control slider__control_next"
+          href="#"
+          role="button"
+          data-slide="next"
+        ></a>
+      </div>
     </div>
   </body>
 </html>
