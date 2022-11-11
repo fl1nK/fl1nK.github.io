@@ -145,10 +145,9 @@ body {
   text-decoration: none;
   display: block;
   position: relative;
-  line-height: 61px;
+  line-height: 60px;
   padding-left: 20px;
   font-size: 18px;
-
   font-weight: bold;
   color: #ffffff;
   transition: 0.3s linear;
@@ -180,4 +179,42 @@ body {
   .menu-main li {
     display: block;
   }
+  .menu-main a {
+    line-height: 40px;
+  }
+}
+
+/*************************************************************/
+/* slider                                               */
+/*************************************************************/
+
+.slider {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.slider__items {
+  counter-reset: slide;
+}
+
+.slider__item {
+  position: relative;
+  counter-increment: slide;
+}
+
+.slider__item::after {
+  content: counter(slide);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.img-fluid {
+  display: inline-block;
+  height: auto;
+  width: 100%;
 }
