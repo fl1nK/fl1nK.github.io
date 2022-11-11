@@ -8,21 +8,22 @@ body {
   font-family: "Muli", sans-serif;
 }
 
-.conteiner {
+.conteiner0 {
+  margin-top: 50px;
   background-color: black;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.block {
+.block0 {
   height: 10em;
   width: 80em;
   align-self: center;
 }
 
 @media (max-width: 80em) {
-  .block {
+  .block0 {
     width: 100%;
   }
 }
@@ -217,4 +218,74 @@ body {
   display: inline-block;
   height: auto;
   width: 100%;
+}
+
+/*************************************************************/
+/* container                                                  */
+/*************************************************************/
+.container1 {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  width: 30em;
+  align-self: center;
+  text-align: center;
+  font-family: "Muli", sans-serif;
+  font-stretch: condensed;
+}
+
+.text h2 {
+  color: #ff5f13;
+  font-weight: 100;
+}
+
+.text h1 {
+  font-weight: 100;
+}
+
+@media (max-width: 600px) {
+  .text {
+    font-size: 10px;
+  }
+}
+
+.blocks1 {
+  border: 2px #080808;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.block1 {
+  border: solid 1px;
+  border-color: #f0f0f0;
+  padding: 5px;
+  width: 250px;
+  color: rgb(0, 0, 0);
+}
+
+.block1 img {
+  width: 80px;
+}
+
+.block1 h2 {
+  font-family: "Muli", sans-serif;
+  font-stretch: condensed;
+  float: right;
+  color: rgb(236, 236, 236);
+}
+
+.block1 h1 {
+  font-family: "Muli", sans-serif;
+  font-stretch: condensed;
+  font-weight: 100;
+}
+
+.block1 p {
+  color: rgb(100, 100, 100);
 }
