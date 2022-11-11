@@ -4,8 +4,10 @@
 }
 body {
   font-family: "Muli", sans-serif;
-  color: #19121e;
+  color: #000000;
   background-color: white;
+  height: 100%;
+  width: 100%;
 }
 
 /*************************************************************/
@@ -205,13 +207,17 @@ body {
   justify-content: center;
 }
 
+.container_3 img {
+  align-self: flex-end;
+}
+
 .block4 {
   background-color: #000000;
   color: #ffffff;
   padding: 50px;
-  height: 500px;
-  width: 800px;
-  margin-bottom: 100px;
+  height: 450px;
+  width: 700px;
+  margin-bottom: 50px;
 }
 
 .block4 > h2 {
@@ -367,10 +373,8 @@ body {
 }
 
 .text4 {
-  text-align: left;
-  width: 400px;
-  margin-left: 300px;
   font-family: "Muli", sans-serif;
+  align-self: center;
 }
 
 .text4 > h2 {
@@ -393,7 +397,5 @@ body {
 #slider-2 {
   max-width: 1300px;
   max-height: auto;
-
-  margin-left: 300px;
   transform: translateY(100px);
 }

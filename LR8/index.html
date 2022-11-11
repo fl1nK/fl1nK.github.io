@@ -5,54 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- Подключаем CSS слайдера -->
-    <link rel="stylesheet" href="simple-adaptive-slider.min.css" />
-    <!-- Подключаем JS слайдера -->
-    <script defer src="simple-adaptive-slider.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // инициализация слайдера
-        var slider = new SimpleAdaptiveSlider("#slider-1", {
-          autoplay: true,
-          interval: 10000,
-        });
-
-        // инициализация слайдера
-        var slider = new SimpleAdaptiveSlider("#slider-2", {
-          autoplay: true,
-          interval: 10000,
-        });
-      });
-    </script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
-    <div class="header1">
-      <img src="png5.png" />
-      <div class="header1-block">
-        <img src="png4.png" />
-        <span>
-          <h1>San Francisco</h1>
-          <p>Mountain View. Fake st., CA</p>
-        </span>
-      </div>
-      <div class="header1-block">
-        <img src="png4.png" />
-        <span>
-          <h1>000 209 392 312</h1>
-          <p>Toil free</p>
-        </span>
-      </div>
-      <div class="header1-block">
-        <img src="png4.png" />
-        <span>
-          <h1>info@gmail.com</h1>
-          <p>Gournadi, 1230 Bariasl</p>
-        </span>
-      </div>
-    </div>
     <header>
+      <div class="header1">
+        <div class="header1-contacts">
+          <img src="png5.png" />
+          <div class="header1-blocks">
+            <div class="header1-block">
+              <img src="images/2.png" />
+              <span>
+                <h1>San Francisco</h1>
+                <p>Mountain View. Fake st., CA</p>
+              </span>
+            </div>
+            <div class="header1-block">
+              <img src="images/4.png" />
+              <span>
+                <h1>000 209 392 312</h1>
+                <p>Toil free</p>
+              </span>
+            </div>
+            <div class="header1-block">
+              <img src="images/3.png" />
+              <span>
+                <h1>info@gmail.com</h1>
+                <p>Gournadi, 1230 Bariasl</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <nav class="top-menu">
         <ul class="menu-main">
           <li><a href="">HOME</a></li>
@@ -65,226 +50,20 @@
       </nav>
     </header>
 
-    <!-- Разметка слайдера -->
-    <div class="slider" id="slider-1">
-      <div class="slider__wrapper">
-        <div class="slider__items">
-          <div class="slider__item">
-            <img
-              class="img-fluid"
-              src="images/111.jpg"
-              alt="..."
-              height="400"
-              loading="lazy"
-            />
-          </div>
-          <div class="slider__item">
-            <img
-              class="img-fluid"
-              src="images/112.jpg"
-              alt="..."
-              height="400"
-              loading="lazy"
-            />
-          </div>
-          <div class="slider__item">
-            <img
-              class="img-fluid"
-              src="images/113.jpg"
-              alt="..."
-              height="400"
-              loading="lazy"
-            />
-          </div>
-          <div class="slider__item">
-            <img
-              class="img-fluid"
-              src="images/114.jpg"
-              alt="..."
-              height="400"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div>
-      <a
-        class="slider__control slider__control_prev"
-        href="#"
-        role="button"
-        data-slide="prev"
-      ></a>
-      <a
-        class="slider__control slider__control_next"
-        href="#"
-        role="button"
-        data-slide="next"
-      ></a>
-    </div>
-
-    <div class="container">
-      <div class="text">
-        <h2>WHAT WE DO</h2>
-        <h1>
-          We Are <b>Leading Industry</b> of Engineering. We Love What We Do
-        </h1>
-      </div>
-      <div class="blocks">
-        <div class="block">
-          <h2>01</h2>
-          <img src="block.png" />
-          <h1>Professional Team</h1>
-          <p>
-            Gravida sodales condimentum pellentesq accumsan orci quam sagittis
-            sapie
-          </p>
-        </div>
-
-        <div class="block">
-          <h2>02</h2>
-          <img src="block.png" />
-          <h1>Great Ideas</h1>
-          <p>
-            Gravida sodales condimentum pellentesq accumsan orci quam sagittis
-            sapie
-          </p>
-        </div>
-
-        <div class="block">
-          <h2>03</h2>
-          <img src="block.png" />
-          <h1>Quality Building</h1>
-          <p>
-            Gravida sodales condimentum pellentesq accumsan orci quam sagittis
-            sapie
-          </p>
-        </div>
-
-        <div class="block">
-          <h2>04</h2>
-          <img src="block.png" />
-          <h1>Quality Works</h1>
-          <p>
-            Gravida sodales condimentum pellentesq accumsan orci quam sagittis
-            sapie
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container_2">
-      <img src="png1.png" />
-      <div class="block2">
-        <div class="text2">
-          <h2>WHY CHOOSE US</h2>
-          <h1>
-            More than
-            <b>50 year experience</b>
-            in industry
-          </h1>
-          <p>
-            Reprehenderit, odio laboriosam? Blanditiis quae ullam quasi illum
-            minima nostrum perspiciatis error consequatur sit nulla .
-          </p>
-        </div>
-        <div class="blocks3">
-          <div class="block3">
-            <img src="png2.png" />
-            <span>
-              <h3>Expert in Builings</h3>
-              <p>Lorem ipsum dolor sit amet</p>
-            </span>
-          </div>
-          <div class="block3">
-            <img src="png2.png" />
-            <span>
-              <h3>Modern Design</h3>
-              <p>Lorem ipsum dolor sit amet</p>
-            </span>
-          </div>
-          <div class="block3">
-            <img src="png2.png" />
-            <span>
-              <h3>Leading In Floor Planning</h3>
-              <p>Lorem ipsum dolor sit amet</p>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container_3">
-      <img src="png3.png" />
-      <div class="block4">
-        <h2>GET A QUOTE</h2>
-        <h1>Request A <b>Quote</b></h1>
-        <form action="" class="ui-form">
-          <div class="form-row">
-            <input placeholder="Your name*" />
-          </div>
-          <div class="form-row">
-            <input placeholder="Phone number" />
-          </div>
-          <div class="form-row">
-            <input placeholder="Your email*" />
-          </div>
-          <div class="form-row">
-            <input placeholder="Subject" />
-          </div>
-          <div>
-            <textarea class="message" placeholder="Message*"></textarea>
-          </div>
-          <div class="button1">
-            <input type="submit" value="SEND MESSAGE" />
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="container_4">
-      <div class="text4">
-        <h2>OUR PROJECTS</h2>
-        <h1>Explore Our <b>Recent Projects</b></h1>
-      </div>
-
-      <!-- Разметка слайдера -->
-      <div class="slider" id="slider-2">
-        <div class="slider__wrapper">
-          <div class="slider__items">
-            <div class="slider__item">
-              <img
-                class="img-fluid"
-                src="png6.png"
-                alt="..."
-                height="400"
-                width="=800"
-                loading="lazy"
-              />
-            </div>
-            <div class="slider__item">
-              <img
-                class="img-fluid"
-                src="png6.png"
-                alt="..."
-                height="400"
-                width="=800"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-        <a
-          class="slider__control slider__control_prev"
-          href="#"
-          role="button"
-          data-slide="prev"
-        ></a>
-        <a
-          class="slider__control slider__control_next"
-          href="#"
-          role="button"
-          data-slide="next"
-        ></a>
-      </div>
+    <div class="conteiner">
+      <div class="block" id="1" style="background-color: red"></div>
+      <div
+        class="block"
+        id="2"
+        style="background-color: rgb(115, 255, 0)"
+      ></div>
+      <div class="block" id="3" style="background-color: rgb(17, 0, 255)"></div>
+      <div
+        class="block"
+        id="4"
+        style="background-color: rgb(255, 0, 179)"
+      ></div>
+      <div class="block" id="5" style="background-color: red"></div>
     </div>
   </body>
 </html>
