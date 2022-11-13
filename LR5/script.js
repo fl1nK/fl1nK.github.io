@@ -66,7 +66,7 @@ function checkFaculty() {
 
 function checkAddress() {
   var value = form.address.value;
-  var valueRE = /^м.[А-ЯІЇЄҐ][а-яїєґ]+$/;
+  var valueRE = /^м.+\s[А-ЯІЇЄҐ][а-яїєґ]+$/;
   return value.match(valueRE);
 }
 
