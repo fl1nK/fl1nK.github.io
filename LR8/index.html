@@ -5,25 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Подключаем CSS слайдера -->
     <link rel="stylesheet" href="simple-adaptive-slider.min.css" />
     <!-- Подключаем JS слайдера -->
     <script defer src="simple-adaptive-slider.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // инициализация слайдера
-        var slider = new SimpleAdaptiveSlider("#slider-1", {
-          autoplay: true,
-          interval: 10000,
-        });
 
-        // инициализация слайдера
-        var slider = new SimpleAdaptiveSlider("#slider-2", {
-          autoplay: true,
-          interval: 10000,
-        });
-      });
-    </script>
     <link href="style2.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -56,18 +46,21 @@
           </div>
         </div>
       </div>
-
-      <nav class="top-menu">
-        <ul class="menu-main">
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUTE US</a></li>
-          <li><a href="">OUR PROJECTS</a></li>
-          <li><a href="">TESTTIMONIALS</a></li>
-          <li><a href="">BLOG</a></li>
-          <li><a href="">CONTACT</a></li>
-        </ul>
-      </nav>
     </header>
+
+    <div class="nav">
+      <div class="topnav" id="myTopnav">
+        <a href="">HOME</a>
+        <a href="">ABOUTE US</a>
+        <a href="">OUR PROJECTS</a>
+        <a href="">TESTTIMONIALS</a>
+        <a href="">BLOG</a>
+        <a href="">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
 
     <!-- Разметка слайдера -->
     <div class="slider" id="slider-1">
@@ -76,7 +69,7 @@
           <div class="slider__item">
             <img
               class="img-fluid"
-              src="images/111.jpg"
+              src="images/111.png"
               alt="..."
               height="400"
               loading="lazy"
@@ -85,25 +78,7 @@
           <div class="slider__item">
             <img
               class="img-fluid"
-              src="images/112.jpg"
-              alt="..."
-              height="400"
-              loading="lazy"
-            />
-          </div>
-          <div class="slider__item">
-            <img
-              class="img-fluid"
-              src="images/113.jpg"
-              alt="..."
-              height="400"
-              loading="lazy"
-            />
-          </div>
-          <div class="slider__item">
-            <img
-              class="img-fluid"
-              src="images/114.jpg"
+              src="images/112.png"
               alt="..."
               height="400"
               loading="lazy"
@@ -294,5 +269,7 @@
         ></a>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
