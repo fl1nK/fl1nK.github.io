@@ -1,8 +1,6 @@
 // Завдання 1 --------------------------------
 function randomColor(){
-    max = 255
-    min = 0
-    return Math.floor(Math.random() * (max - min)) + min;
+    return Math.floor(Math.random() * 255);
 }
 
 function bcEx1(){

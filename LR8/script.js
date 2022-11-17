@@ -8,13 +8,13 @@ function myFunction() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  // инициализация слайдера
+  // ініціалізація слайдера
   var slider = new SimpleAdaptiveSlider("#slider-1", {
     autoplay: true,
     interval: 10000,
   });
 
-  // инициализация слайдера
+  // ініціалізація слайдера
   var slider = new SimpleAdaptiveSlider("#slider-2", {
     autoplay: true,
     interval: 10000,
