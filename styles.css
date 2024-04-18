@@ -1,0 +1,378 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* =================================================================== */
+
+@font-face {
+    font-family: "Grtsk";
+    src: url("fonts/Grtsk-Medium.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Grtsk", Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: 100vh;
+}
+
+.left-section {
+    flex: 70%;
+    position: relative;
+}
+
+.logo-back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 80px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.logo-sign {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 80px;
+}
+
+.logo-sign img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1335px) {
+    .logo {
+        padding: 50px;
+    }
+
+    .logo-sign {
+        padding: 50px;
+    }
+
+    .logo-sign img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .logo {
+        padding: 25px;
+    }
+
+    .logo-sign {
+        padding: 25px;
+    }
+
+    .logo-sign img {
+        width: 100px;
+    }
+}
+
+.right-section {
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 400px;
+    /* border: 1px solid #000000; */
+}
+
+@media screen and (max-width: 1335px) {
+    .form-container {
+        width: 100%;
+        margin: 170px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .form-container {
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.form-group {
+    position: relative;
+    margin-top: 30px;
+}
+
+input i {
+    padding-block: 0px;
+    padding-inline: 0px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #848c9c;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    caret-color: #e73027;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    color: #848c9c;
+    background-color: #ffffff;
+    padding: 2px;
+
+    position: absolute;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+input:focus {
+    outline: 0;
+    border: 1px solid #000000;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    fill: #848c9c;
+}
+input:focus + .eye-icon {
+    fill: #000000;
+}
+
+input:focus + .eye-icon:hover {
+    fill: #e2554d;
+}
+.eye-icon:hover {
+    fill: #e2554d;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    background: #e73027;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background: #ececef;
+    color: #848c9c;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    background-color: #e2554d;
+    color: #fff;
+}
+
+.small-text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    padding-top: 25px;
+}
+
+span {
+    font-weight: 700;
+}
+
+#passwordCriteria {
+    display: none;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    padding-left: 20px;
+    color: #e73027;
+}
+
+#passwordMatchError {
+    display: none;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #e73027;
+}
+
+.red {
+    color: #e73027;
+}
+
+.bred {
+    border: 1px solid #e73027;
+}
