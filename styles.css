@@ -169,7 +169,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 80px;
+    margin: 80px;
 }
 
 .logo img {
@@ -181,7 +181,7 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 80px;
+    margin: 80px;
 }
 
 .logo-sign img {
@@ -191,11 +191,11 @@ body {
 
 @media screen and (max-width: 1335px) {
     .logo {
-        padding: 50px;
+        margin: 50px;
     }
 
     .logo-sign {
-        padding: 50px;
+        margin: 50px;
     }
 
     .logo-sign img {
@@ -203,13 +203,13 @@ body {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 540px) {
     .logo {
-        padding: 25px;
+        margin: 25px;
     }
 
     .logo-sign {
-        padding: 25px;
+        margin: 25px;
     }
 
     .logo-sign img {
@@ -230,16 +230,21 @@ body {
 }
 
 @media screen and (max-width: 1335px) {
+    .left-section,
+    .right-section {
+        flex: 100%;
+    }
+
     .form-container {
         width: 100%;
-        margin: 170px;
+        margin: 0 170px;
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 540px) {
     .form-container {
         width: 100%;
-        margin: 20px;
+        margin: 0 20px;
     }
 }
 
@@ -247,7 +252,7 @@ h2 {
     font-size: 24px;
     font-weight: 500;
     line-height: 20px;
-    text-align: left;
+
     margin-bottom: 4px;
 }
 
@@ -375,4 +380,13 @@ span {
 
 .bred {
     border: 1px solid #e73027;
+}
+
+.switch-conteiner {
+    width: 400px;
+    text-align: center;
+}
+
+.switch {
+    margin-bottom: 40px;
 }

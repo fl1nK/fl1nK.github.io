@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Адаптивна верстка</title>
+        <style>
+            /* Загальні стилі */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .block {
+                flex: 1;
+                min-width: 200px;
+                margin: 10px;
+                padding: 20px;
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            /* Адаптивні стилі */
+            @media only screen and (max-width: 768px) {
+                .block {
+                    flex-basis: 100%;
+                }
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                .block {
+                    flex-basis: calc(50% - 20px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="block">
+                <h2>Блок 1</h2>
+                <p>Це перший блок.</p>
+            </div>
+            <div class="block">
+                <h2>Блок 2</h2>
+                <p>Це другий блок.</p>
+            </div>
+        </div>
+    </body>
+</html>
