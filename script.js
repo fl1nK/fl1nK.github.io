@@ -116,10 +116,8 @@ function checkFields() {
 
     if (firstCheck && secondCheck) {
         submitButton.disabled = false
-        // submitButton.classList.add("button-enabled")
     } else {
         submitButton.disabled = true
-        // submitButton.classList.remove("button-enabled")
     }
 }
 
