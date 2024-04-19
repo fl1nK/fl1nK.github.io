@@ -123,10 +123,12 @@ function checkFields() {
     }
 }
 
-const formContainer = document.querySelector(".form-container")
+const formContainer = document.querySelector(".form-conteiner")
 const switchConteiner = document.querySelector(".switch-conteiner")
+console.log(formContainer)
 
 submitButton.addEventListener("click", function (event) {
     formContainer.classList.toggle("hidden")
     switchConteiner.classList.toggle("hidden")
+    alert("Enabled!")
 })

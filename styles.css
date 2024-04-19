@@ -128,8 +128,6 @@ table {
     border-spacing: 0;
 }
 
-/* =================================================================== */
-
 @font-face {
     font-family: "Grtsk";
     src: url("fonts/Grtsk-Medium.ttf") format("truetype");
@@ -145,106 +143,146 @@ body {
     font-family: "Grtsk", Arial, sans-serif;
 }
 
-.container {
+.conteiner {
+    width: 100%;
+
     display: flex;
-    flex-wrap: wrap-reverse;
-    height: 100vh;
+    /* flex-wrap: wrap-reverse; */
+    min-height: 100vh;
 }
 
-.left-section {
+.left-conteiner {
     flex: 70%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("images/background.png");
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
-.logo-back {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url(images/background.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+.logo-conteiner {
     height: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 80px;
-}
-
-.logo img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    padding: 80px;
+
+    /* align-self: flex-start; */
 }
 
 .logo-sign {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 80px;
-}
-
-.logo-sign img {
-    width: 100%;
+    max-width: 359px;
     height: auto;
+    margin: 0 80px 80px 0;
+
+    align-self: flex-end;
 }
 
-@media screen and (max-width: 1335px) {
+@media (max-width: 1350px) {
+    .left-conteiner {
+        flex: 60%;
+    }
+}
+
+/* @media (max-width: 1200px) {
     .logo {
-        margin: 50px;
+        padding: 50px;
     }
 
     .logo-sign {
-        margin: 50px;
+        margin: 0 50px 50px 0;
     }
+} */
 
-    .logo-sign img {
-        width: 200px;
+@media (max-width: 1024px) {
+    .logo-conteiner {
+        justify-content: unset;
     }
-}
-
-@media screen and (max-width: 540px) {
     .logo {
-        margin: 25px;
+        padding: 50px;
     }
 
     .logo-sign {
-        margin: 25px;
-    }
-
-    .logo-sign img {
-        width: 100px;
+        margin: 0 50px 50px 0;
+        max-width: 203px;
     }
 }
 
-.right-section {
+@media (max-width: 767px) {
+    .logo {
+        padding: 25px;
+    }
+
+    /* .logo-sign {
+        margin: 0 25px 25px 0;
+        max-width: 100px;
+    } */
+}
+
+@media (max-width: 430px) {
+    .logo-sign {
+        margin: 20px 25px 25px 0;
+        max-width: 100px;
+    }
+}
+
+.right-conteiner {
     flex: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form-container {
+.form-conteiner {
     width: 400px;
-    /* border: 1px solid #000000; */
+    height: auto;
+    /* border: 1px solid black; */
 }
 
-@media screen and (max-width: 1335px) {
-    .left-section,
-    .right-section {
-        flex: 100%;
-    }
-
-    .form-container {
-        width: 100%;
-        margin: 0 170px;
+@media (max-width: 1350px) {
+    .right-container {
+        flex: 40%;
     }
 }
 
-@media screen and (max-width: 540px) {
-    .form-container {
+/* @media (max-width: 1200px) {
+    .right-container {
+        flex: 40%;
+    }
+} */
+
+@media (max-width: 1024px) {
+    .conteiner {
+        flex-direction: column-reverse;
+    }
+    .left-conteiner {
+        flex: 0;
+    }
+    .right-conteiner {
+        flex: 1;
+    }
+    .form-conteiner {
+        width: 496px;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-conteiner {
+        width: 374px;
+    }
+}
+
+@media (max-width: 420px) {
+    .form-conteiner {
         width: 100%;
-        margin: 0 20px;
+        padding: 0 20px 0 20px;
     }
 }
 
@@ -252,18 +290,12 @@ h2 {
     font-size: 24px;
     font-weight: 500;
     line-height: 20px;
-
     margin-bottom: 4px;
 }
 
 .form-group {
     position: relative;
     margin-top: 30px;
-}
-
-input i {
-    padding-block: 0px;
-    padding-inline: 0px;
 }
 
 input {
@@ -308,6 +340,7 @@ input:focus {
     cursor: pointer;
     fill: #848c9c;
 }
+
 input:focus + .eye-icon {
     fill: #000000;
 }
